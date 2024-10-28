@@ -19,6 +19,9 @@ print(match_4)
 # sub 함수(패턴에 부합하는 모든 부분들을 새로운 문자로 모두 바꿔준다.) (문자열로 바꿔야 한다 !)
 match_5 = re.sub(pattern_1, "배", text)
 print(match_5)
+# compile 함수 (새로운 문법을 만들어 낸다.)
+pattern = re.compile(r"$\d+")
+match = pattern.findall(text)
 
 
 # re모듈의 매크로들
